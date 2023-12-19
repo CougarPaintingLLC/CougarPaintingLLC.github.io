@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 5px;
+  height: 100%;
+  text-align: left;
+}
+
+header {
+  /*position: fixed; prevents proper spacing from other text. all goes top left*/
+  font-family: Arial;
+  color: white;
+  height: 15vh;
+  width: 98%;
+  text-align: center;
+  margin: 10px auto;
+  border: 1px solid white;
+  /*background-color: black;*/
+  overflow: hidden;
+}
+
+header h1 {
+  /*border: 1px solid black;
+  background-color: black;*/
+  width: 100%;
+  padding: 2px;
+  font-size: 6.0em;
+  font-weight: bold;
+  letter-spacing: 8px;
+  display: inline;
+  object-fit: contain;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  margin: 10px auto;
+  /*position: fixed;
+  display: flex; does not center text*/
+}
+
+.bkgContainer {
+  height: 25%;
+  width: 100%;
+  position: relative;
+}
+
+.bkgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  padding-right: 20;
+  object-fit: cover;
+  padding-left: 20;
+  overflow: hidden;
+  /*min-width: 100%;
+  min-height: 100%; */
+  z-index: 0;
+  /*object-position: center;
+  object-fit: cover;*/
+}
+
+.content {
+  color: white;
+  border: 1px solid white;
+  top: 1900;
+  margin: 10px;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 14px 16px;
+  clear: both;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+ul {
+  list-style-type: none;
+}
+ul.navbar {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  font-size:  xx-large;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.imgHeader{
+  object-fit: contain;
+  z-index: -1;
+  margin: 0 auto;
+  background-image: url(../images/cropped_aiGenerated_overview.JPG);
+}
+
+.imgHeaderRiver{
+  object-fit: contain;
+  z-index: -1;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 1px;
+  padding-left: 70px;
+  padding-top: 5px;
+  margin: auto;
+}
+
+.gridImg {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.gridTxt {
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.fontHours {
+  font-size: 25px;
+}
+
+.fontDescription {
+  font-size: 18px;
+  text-align: center;
+  padding-left: 15px;
+}
+
+h2 {
+  padding-left: 15px;
+  text-align: center;
+}
+
+.gridSampleImg {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  padding-right: 15px;
+}
+
+.containerSampleImg {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  padding: 1px;
+  padding-top: 5px;
+  color: black;
+  margin: auto;
+  background-color: white;
+}
+
+/*Slideshow*/
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, 
+.mySlides5, .mySlides6, .mySlides7, .mySlides8,
+ .mySlides9, .mySlides10, .mySlides11 {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+p {
+  padding: 15px;
+}
